@@ -1,33 +1,36 @@
-Helios by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Gait Monitoring Webiste Visualization
+# Professor Pan
+Submitted by: **Francisco Lira**
+
+**Gait Monitoring Webiste Visualization** is a website visulaization that will assist in visualizing and understanding the current resercah project. 
 
 
-This is Helios, a brand new site template for HTML5 UP. It's clean, modern, and designed
-to take advantage of larger (well, wider) displays while still being capable of gracefully
-scaling down to fit all manner of smaller ones.
+Time spent: **2** hours spent in total
 
-Demo images* courtesy of Michael Domaradzki, an awesome photographer I met over at
-deviantART. Check out his portfolio here:
+## User Stories
 
-http://md.photomerchant.net/
+The following **required** functionality is complete:
 
-(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
-and/or use any of Michaels's work without his explicit permission!)
+* [ ] n/a
+* [ ] n/a
 
-AJ
-aj@lkn.io | @ajlkn
+The following **additional** features are implemented:
 
+- [ ] CSS Asthetics
+- [ ] Bootstrap
+- [ ] List of Organizations
 
-Credits:
+## Video Walkthrough
 
-	Demo Images:
-		Michael Domaradzki (md.photomerchant.net)
+Here's a walkthrough of the webapp:
 
-	Icons:
-		Font Awesome (fontawesome.io)
+Video Walkthrough:
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+![](Link)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+## Notes
+
+Describe any challenges encountered while building the webapp.
+
