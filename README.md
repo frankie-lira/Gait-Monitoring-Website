@@ -16,9 +16,9 @@ The following **required** functionality is complete:
 
 The following **additional** features are implemented:
 
-- [ ] CSS Asthetics
-- [ ] Bootstrap
-- [ ] List of Organizations
+- [ ] n/a
+- [ ] n/a
+- [ ] n/a
 
 ## Video Walkthrough
 
