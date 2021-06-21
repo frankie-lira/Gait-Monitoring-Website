@@ -1,6 +1,6 @@
 # Gait Monitoring Webiste Visualization
 # Pervasive Autonomous Networked Systems Lab
-Submitted by: **Francisco Lira**
+Submitted by: **Francisco Lira** and **Melody Hu**
 
 **Gait Monitoring Webiste Visualization** is a website visulaization that will assist in visualizing and understanding the current research project. 
 
