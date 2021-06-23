@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -43,9 +44,11 @@
 						-->
 				</div>
 
+<!--
 				<html>
 					<head>
-					  <!--Load the AJAX API-->
+
+					  // Load the AJAX API
 					  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 					  <script type="text/javascript">
 
@@ -85,36 +88,49 @@
 					</head>
 
 					<body>
-					  <!--Div that will hold the pie chart-->
+					  //Div that will hold the pie chart
 					  <div id="chart_div"></div>
 					</body>
 				  </html>
+-->
 
 			<!-- Banner -->
 				<section id="banner">
 					<header>
 						<h2>Hi. You're looking at the visualization <strong>template</strong>.</h2>
 						<p>
-							[direction for how to connect raspberry pi]
+							[direction for how to use]
 						</p>
 					</header>
 				</section>
 
-
+				<div>
+					<div id="d18660f3-1557-43c1-8f27-09292a9a8de7" style="height: 100%; width: 100%;" class="plotly-graph-div"></div>
+					<script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";
+					Plotly.newPlot("d18660f3-1557-43c1-8f27-09292a9a8de7", [{"name": "Sensor 1", "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "y":
+					 [9, 6, 2, 1, 5, 4, 6, 8, 1, 3], "type": "bar", "uid": "39c52ed4-e27d-4574-9cec-a3d50a8773a0"},
+					 {"name": "Sensor 2", "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "y": [19, 36, 12, 1, 35, 4, 6, 8, 1, 3], "type": "bar",
+					 "uid": "c0b658e9-bd5b-4c65-976d-1e03ba5836a3"}], {"title": {"text": "Visualization of Data"}, "xaxis": {"tickangle": -45,
+					 "tickfont": {"color": "rgb(107, 107, 107)", "size": 14}, "title": {"text": "X axis"}}, "yaxis": {
+						 "tickfont": {"color": "rgb(107, 107, 107)", "size": 14}, "title": {"font": {"color": "rgb(107, 107, 107)", "size": 16},
+						  "text": "Y axis"}}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"})</script>
+					<script type="text/javascript">window.addEventListener("resize", function(){Plotly.Plots.resize(document.getElementById("d18660f3-1557-43c1-8f27-09292a9a8de7"));});</script>
+				</div>
 
 			<!-- Main -->
 				<div class="wrapper style2">
 
 					<article id="main" class="container special">
 
-						<a href="#" class="image featured"><img src="images/pic06.jpg" alt="visualization" /></a>
+						<!--<a href="#" class="image featured"><img src="images/pic06.jpg" alt="visualization" /></a>-->
 						<header>
-							<h2><a href="#">Sed massa imperdiet magnis</a></h2>
+							<br>
+							<h4>Information About Data</h4>
 							<p>
 								<li>[information about data; ex: time, time interval, etc.]</li>
 							</p>
 						</header>
-						<p>
+						<!--<p>
 							Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere accumsan massa
 							posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla convallis ut venenatis purus
 							sit arcu sociis. Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. Primis aliquam
@@ -123,7 +139,7 @@
 							consequat integer interdum integer purus sapien. Nibh eleifend nulla nascetur pharetra commodo mi augue
 							interdum tellus. Ornare cursus augue feugiat sodales velit lorem. Semper elementum ullamcorper lacinia
 							natoque aenean scelerisque.
-						</p>
+						</p>-->
 						<footer>
 							<a href="#" class="button">Download Visualization</a> <!-- not sure if it is necessary -->
 						</footer>
