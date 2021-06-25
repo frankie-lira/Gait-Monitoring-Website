@@ -2,7 +2,7 @@
 # Pervasive Autonomous Networked Systems Lab
 Submitted by: **Francisco Lira** and **Melody Hu**
 
-**Gait Monitoring Website Visualization** is a website visualization that will assist in visualizing and understanding the current research project. 
+**Gait Monitoring Website Visualization** is a data visualization tool that will assist in visualizing and understanding the current research project. 
 
 
 Time spent: **X** hours spent in total
