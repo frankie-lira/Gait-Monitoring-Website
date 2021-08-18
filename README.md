@@ -2,14 +2,13 @@
 ## Pervasive Autonomous Networked Systems (PANS) Lab 
 Submitted by: **Francisco Lira** and **Melody Hu**
 
-**Gait Monitoring Website Visualization** is a data visualization tool that will assist in visualizing and understanding the current research project. 
+**Gait Monitoring Website Visualization** is a data visualization tool that assists in visualizing and understanding the current research project. 
 
 ## Summary Of Overall Project
 
 For fall-risk assessment of older adults, long-term non-intrusive gait monitoring at home is crucial. Due to floor vibration-based system’s need for dense deployment, we propose to install structural vibration sensors on robot vacuum cleaners that would be able to collect data from around the house. In order to validate our system, we conduct experiments that compare signals acquired from sensors on floor and sensors on robot.
 
 Time spent: Summer 2021 (June - August)
-
 
 Each sensor node contains two parts: the signal amplifier, sampling part, and data collection and saving part. This tutorial introduces how to build the sensor unit from the independent modules to a functional sensor unit.
 
@@ -36,7 +35,7 @@ Using the Micro-USB wire to connect the Arduino board and the Raspberry Pi. That
 ## Software deployment
 
 ### Visualization tool Setup
-The repository of the visulaization code can be found [here](https://github.com/frankie-lira/Gait-Monitoring-Website)
+The repository of the visualization code can be found [here](https://github.com/frankie-lira/Gait-Monitoring-Website)
 
 Run the code in your IDE of choosing (Recommend Visual Studio Code) and make sure that it runs locally. 
 
@@ -72,7 +71,6 @@ Here's a walkthrough of implemented user stories:
 
 ## Instruction for how to use
 
-1. make sure Arduino board is running the Arduino.ino file
-2. plug in Arduino board into Raspberry Pi
-3. run the server.py script on the Raspberry Pi (might need to install websockets)
-4. open index.html locally or host a HTTP server
+1. plug in Arduino board into Raspberry Pi
+2. run the server.py script on the Raspberry Pi
+3. open index.html locally or host a HTTP server
