@@ -14,15 +14,9 @@ arduino = serial.Serial(port, 115200)
 # function that sends data from arduino to client via websocket
 async def senddata(websocket, path):
     while True:
-        # method #1: wait for a sec then send all data collected in that one sec
-        # time.sleep(1)
-        # data = arduino.read(arduino.inWaiting()).decode("utf-8")
-
-        # method #2: send data one by one
-        data = arduino.readline().decode('UTF-8')
-
-        # shouldn't uncomment line below (significantly slows down performance) unless needed for debugging
-        # print(data)
+        # wait for 0.1 sec then send all data collected in that time interval
+        time.sleep(0.1)
+        data = arduino.read(arduino.inWaiting()).decode("utf-8")
 
         await websocket.send(data)
 
