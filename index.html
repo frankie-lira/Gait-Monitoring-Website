@@ -13,15 +13,12 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 		<script src = "plotly.js"></script>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
-
-			<!-- Header -->
 				<div id="header">
-
-					<!-- Inner -->
 						<div class="inner">
 							<header>
 								<h1>Vibration Visualization Platform</h1>
@@ -32,116 +29,17 @@
 								<a href="#banner" class="button circled scrolly">Start</a>
 							</footer>
 						</div>
-
-					<!-- Nav -->
-					<!--
-						<nav id="nav">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
-							</ul>
-						</nav>
-						-->
 				</div>
 
-<!--
-				<html>
-					<head>
-
-					  // Load the AJAX API
-					  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-					  <script type="text/javascript">
-
-						// Load the Visualization API and the corechart package.
-						google.charts.load('current', {'packages':['corechart']});
-
-						// Set a callback to run when the Google Visualization API is loaded.
-						google.charts.setOnLoadCallback(drawChart);
-
-						// Callback that creates and populates a data table,
-						// instantiates the pie chart, passes in the data and
-						// draws it.
-						function drawChart() {
-
-						  // Create the data table.
-						  var data = new google.visualization.DataTable();
-						  data.addColumn('string', 'Topping');
-						  data.addColumn('number', 'Slices');
-						  data.addRows([
-							['Mushrooms', 3],
-							['Onions', 1],
-							['Olives', 1],
-							['Zucchini', 1],
-							['Pepperoni', 2]
-						  ]);
-
-						  // Set chart options
-						  var options = {'title':'How Much Pizza I Ate Last Night',
-										 'width':400,
-										 'height':300};
-
-						  // Instantiate and draw our chart, passing in some options.
-						  var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-						  chart.draw(data, options);
-						}
-					  </script>
-					</head>
-
-					<body>
-					  //Div that will hold the pie chart
-					  <div id="chart_div"></div>
-					</body>
-				  </html>
--->
-
-			<!-- Banner -->
 				<section id="banner">
 					<header>
 						<h2>Data Visualization Tool</h2>
-						<p>
-							[direction for how to use]
-						</p>
 					</header>
 				</section>
 
+				<!-- plotly graph -->
 				<div id="myDiv"></div>
-				<script src="plotly.js"></script>
-			<!-- Main -->
-				<div class="wrapper style2">
 
-					<article id="main" class="container special">
-
-						<!--<a href="#" class="image featured"><img src="images/pic06.jpg" alt="visualization" /></a>-->
-						<header>
-							<br>
-							<h4>Information About Data</h4>
-							<p>
-								<li>Use Node.js to read data file on server</li>
-								<li>Use AJAX to access server from website</li>
-								<li>Add data to Plotly graph while syncing the time</li>
-								<li>Update every second?</li>
-							</p>
-						</header>
-						<!--<p>
-							Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere accumsan massa
-							posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla convallis ut venenatis purus
-							sit arcu sociis. Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. Primis aliquam
-							mus lacinia lobortis phasellus suscipit. Fermentum lobortis non tristique ante proin sociis accumsan
-							lobortis. Auctor etiam porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum
-							consequat integer interdum integer purus sapien. Nibh eleifend nulla nascetur pharetra commodo mi augue
-							interdum tellus. Ornare cursus augue feugiat sodales velit lorem. Semper elementum ullamcorper lacinia
-							natoque aenean scelerisque.
-						</p>-->
-						<footer>
-							<!--<a href="#" class="button">Download Visualization</a> -->
-						</footer>
-					</article>
-
-				</div>
-
-			<!-- Features -->
 				<div class="wrapper style1">
 
 					<section id="features" class="container special">
@@ -171,8 +69,7 @@
 								<p>
 									For the experiments, a vibration sensor is connected to an Arduino, which is connected to a Raspberry
 									Pi, as shown above. The whole system is then placed on a robot vacuum cleaner. This website assists
-									with the visualization of data collected by the sensors.<br><br>[add more information about the transfer
-									of data]
+									with the visualization of data collected by the sensors.
 								</p>
 							</article>
 							<article class="col-4 col-12-mobile special">
@@ -181,57 +78,16 @@
 									<h3><a href="#">Process of Visualizing Data</a></h3>
 								</header>
 								<p>
-									Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-									porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
+									The Arduino board with the sensor connected is plugged into the Raspberry Pi. The Raspberry Pi runs the
+									server script, which establishes a websocket connection with the client, which is this webapp. Through the
+									websocket connection, data collected by the sensor is sent from the Raspberry Pi to the webapp, which then
+									it is being plotted by the tool Plotly.
 								</p>
 							</article>
 						</div>
 					</section>
 
-
-						<section id="features" class="container special">
-							<header>
-								<p>Hardware Components</p>
-							</header>
-							<div class="row">
-								<article class="col-4 col-12-mobile special">
-									<a href="#" class="image featured"><img src="images/DW1000_connection.jpg"  alt="" /></a>
-									<header>
-										<h3>Amet nullam fringilla </h3>
-									</header>
-									<p>
-										Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-									</p>
-								</article>
-								<article class="col-4 col-12-mobile special">
-									<a href="#" class="image featured"><img src="images/raspberry_set.jpg" alt="" /></a>
-									<header>
-										<h3><a href="#">Data Collection Setup</a></h3>
-									</header>
-									<p>
-										Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-									porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-									</p>
-								</article>
-								<article class="col-4 col-12-mobile special">
-									<a href="#" class="image featured"><img src="images/vibration_module_connection.png" alt="" /></a>
-									<header>
-										<h3><a href="#">Hardware connection</a></h3>
-									</header>
-									<p>
-										his figure showed the connection between the Arduino, Geophone, and Amplifier. The red wire represents 
-										the 3.3V power supply. The black wire represents the GND. The blue and green wires represent the signal 
-										from the Geophone, one connects to the GND, and the other one as the input of the Amplifier module. 
-										The yellow wire represents the output of the Amplifier and as the input of the Adruino board ADC pin.
-										Using the Micro-USB wire to connect the Arduino board and the Raspberry Pi. That's all the soldering 
-										and connection work.
-									</p>
-								</article>
-							</div>
-						</section>
-	
-					</div>
-					
+				</div>
 
 			<!-- Footer -->
 				<div id="footer">
@@ -245,13 +101,8 @@
 										<header>
 											<h3>Interested in learning more? Contact us!</h3>
 										</header>
-										<!--<p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>-->
-										<ul class="icons">
 											<li><a href="https://www.pans-lab.com" class="fas fa-flask" target="_blank"></a></li>
 											<li><a href="#" class="fas fa-envelope"></a></li>
-											<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-											<!--<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>-->
-											<!--<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>-->
 											<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 											<li><a href="https://www.linkedin.com/in/shijiapan/" class="icon brands fa-linkedin-in" target="_blank"><span class="label">Linkedin</span></a></li>
 										</ul>
@@ -260,7 +111,7 @@
 								<!-- Copyright -->
 									<div class="copyright">
 										<ul class="menu">
-											<li>&copy; Untitled. All rights reserved.</li> <!--<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
+											<li>&copy; PANS Lab. All rights reserved.</li>
 										</ul>
 									</div>
 
