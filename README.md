@@ -70,4 +70,9 @@ Here's a walkthrough of implemented user stories:
 
 <img src='url' width='' alt='Video Walkthrough' />
 
+## Instruction for how to use
 
+1. make sure Arduino board is running the Arduino.ino file
+2. plug in Arduino board into Raspberry Pi
+3. run the server.py script on the Raspberry Pi (might need to install websockets)
+4. open index.html locally or host a HTTP server
