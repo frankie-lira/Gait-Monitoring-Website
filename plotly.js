@@ -1,31 +1,33 @@
-function rand() {
-  return Math.random();
-}
+// connect to Raspberry Pi via websocket
+var ws = new WebSocket("ws://192.168.0.199:5678/");
 
-var time = new Date();
+// when the websocket connection is opened, create an empty graph
+ws.onopen = function()
+{
+  var data = [{
+    y: [],
+    type: 'line',
+    line: {color: '#000000'}
+  }]
 
-var data = [{
-  x: [time],
-  y: [rand()],
-  mode: 'lines',
-  line: {color: '#80CAF6'}
-}]
+  var layout = {
+    xaxis: {
+      autorange: true
+    },
+    yaxis: {
+      range: [0,4],
+      type: 'linear'
+    }
+  };
 
+  Plotly.react('myDiv', data, layout);
+};
 
-Plotly.newPlot('myDiv', data);
+// when the client receives a message, split the message (one string with many data points) into an array with data points & plot onto empty graph
+ws.onmessage = function (evt)
+{
+    var datalist = evt.data.split(/\r\n|\n\r|\n|\r/);
+    //console.log(datalist);
 
-var cnt = 0;
-
-var interval = setInterval(function() {
-
-  var time = new Date();
-
-  var update = {
-  x:  [[time]],
-  y: [[rand()]]
-  }
-
-  Plotly.extendTraces('myDiv', update, [0])
-
-  if(++cnt === 100) clearInterval(interval);
-}, 1000);
+    Plotly.extendTraces('myDiv',{y:[datalist]}, [0]);
+};
