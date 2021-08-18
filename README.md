@@ -1,5 +1,5 @@
 # Gait Monitoring WebApp Visualization Tool
-##Pervasive Autonomous Networked Systems (PANS) Lab 
+## Pervasive Autonomous Networked Systems (PANS) Lab 
 Submitted by: **Francisco Lira** and **Melody Hu**
 
 **Gait Monitoring Website Visualization** is a data visualization tool that will assist in visualizing and understanding the current research project. 
