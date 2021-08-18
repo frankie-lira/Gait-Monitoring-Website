@@ -1,5 +1,6 @@
 // connect to Raspberry Pi via websocket
-var ws = new WebSocket("ws://192.168.0.199:5678/");
+// replace <rpi ip> with raspberry pi ip address
+var ws = new WebSocket("ws://<rpi ip>:5678/");
 
 // when the websocket connection is opened, create an empty graph
 ws.onopen = function()
