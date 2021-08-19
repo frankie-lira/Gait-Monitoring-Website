@@ -25,7 +25,7 @@ Besides these modules on the above table, you also need solder, an extend empty 
 
 ## Hardware connection
 
-![arduino](https://user-images.githubusercontent.com/70989875/129838589-b4d0668e-7e49-40e3-9e9e-3f6826eafe8b.jpg)
+![](images/arduino.jpg)
 
 
 This figure showed the connection between the Arduino, Geophone, and Amplifier. The red wire represents the 3.3V power supply. The black wire represents the GND. The blue and green wires represent the signal from the Geophone, one connects to the GND, and the other one as the input of the Amplifier module. The yellow wire represents the output of the Amplifier and as the input of the Adruino board ADC pin.
