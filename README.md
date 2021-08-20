@@ -77,4 +77,4 @@ Here's a walkthrough of implemented user stories:
 
 1. plug in Arduino board into Raspberry Pi
 2. run the server.py script on the Raspberry Pi
-3. open index.html locally or host a HTTP server (more infor found [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server)
+3. open index.html locally or host a HTTP server (more infor found [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server))
