@@ -65,7 +65,7 @@ pip install plotly==5.2.1
 ```
 
 ## Limitations
-* We set up the Raspberry Pi as the server and the computer hosting the WebApp is the client. There are some limitations to this set up, with one main one being that the user would have to manually enter the Raspberry Pi IP address on the server script and the client script.
+* We set up the Raspberry Pi as the server and the computer hosting the WebApp is the client. There are some limitations to this set up, with one main problem being that the user would have to manually enter the Raspberry Pi IP address on the server script and the client script.
 * While the plotting tool works, the graph looks really cramped after leaving the WebApp to run for a while. This could be fixed by zooming in on certain parts of the graph or making the x-axis automatically change the layout every time interval.
 
 ## Video Walkthrough
@@ -77,4 +77,4 @@ Here's a walkthrough of implemented user stories:
 
 1. plug in Arduino board into Raspberry Pi
 2. run the server.py script on the Raspberry Pi
-3. open index.html locally or host a HTTP server
+3. open index.html locally or host a HTTP server (more infor found [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server)
