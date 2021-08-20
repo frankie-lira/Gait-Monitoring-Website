@@ -48,21 +48,24 @@ The code that was flushed to the arduino can be found [here](https://github.com/
 
 ### Raspberry Pi
 
-#### Raspberry Pi setup
-First of all, download SD card installation file: https://www.raspberrypi.org/downloads/noobs/
-
-Unzip the file and put the files into the SD card formatted as FAT32 Find wired mouse, keyboard, HDMI cable, ethernet cable, and a screen before you start. Refer to https://www.raspberrypi.org/learning/noobs-install/elcapitan/ and https://github.com/dandanpan/multi-people-tracking
-
-for the rest of the installation.
-
-When ask for ”Enter interface name”, enter wlan0 to setup the wireless network settings
-
-Furthermore, setup the static IP address for the node for easy access: https://www.raspberrypi.org/learning/networking-lessons/rpi-static-ip-address/
-
-Enable SSH on the Pi by following this: https://pihw.wordpress.com/guides/direct-network-connection/
-
 #### Raspberry Pi Server Set Up
-in the build in python IDE in the Raspberry pi write the code for the server. The code that was sued to create the server can be found [here](https://github.com/frankie-lira/Gait-Monitoring-Website/tree/master/raspberry%20pi)
+Download websockets on the Raspberry Pi:
+```bash
+pip3 install websocket-client
+```
+
+In the built-in python IDE in the Raspberry pi, write the code for the server. The code that was used to create the server can be found [here](https://github.com/frankie-lira/Gait-Monitoring-Website/tree/master/raspberry%20pi)
+
+### Computer
+
+#### Computer (that the WebApp runs on) Set Up
+Install Plotly (make sure it is version 5.2.1):
+```bash
+pip install plotly==5.2.1
+```
+
+## Limitations
+* We set up the Raspberry Pi as the server and the computer hosting the WebApp is the client. There are 
 
 ## Video Walkthrough
 Here's a walkthrough of implemented user stories:
